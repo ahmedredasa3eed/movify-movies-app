@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "944258440484",
+    "project_id": "movify-f1db0",
+    "storage_bucket": "movify-f1db0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944258440484:android:212afad97133a9676fa7b1",
+        "android_client_info": {
+          "package_name": "com.ahmedreda.movify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944258440484-greir0ncg0bmrjk5r1cpgq1slcdk0q00.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmFr4L-DyLLlm6iDAs5p4dcn6km4o9hks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944258440484-greir0ncg0bmrjk5r1cpgq1slcdk0q00.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
