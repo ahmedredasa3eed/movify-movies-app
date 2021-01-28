@@ -2,7 +2,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:movify/views/auth.dart';
-import 'package:movify/views/home_screen.dart';
+import 'package:movify/views/home_view.dart';
 
 class SplashScreen extends StatefulWidget {
   static const route = 'splash-screen';

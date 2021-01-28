@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movify/style/styles.dart';
-import 'package:movify/views/search_results.dart';
+import 'package:movify/views/search_results_view.dart';
 
 import 'alert_dialog.dart';
 

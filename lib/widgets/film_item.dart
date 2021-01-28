@@ -1,10 +1,11 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:movify/models/movie.dart';
-import 'package:movify/services/movies_api.dart';
 import 'package:movify/style/styles.dart';
-import 'package:movify/views/movie_details.dart';
+import 'package:movify/view_models/movies_list_view_model.dart';
+import 'package:movify/views/movie_details_view.dart';
 import 'package:movify/widgets/loading.dart';
+import 'package:provider/provider.dart';
 
 class FilmItem extends StatelessWidget {
 
@@ -12,11 +13,10 @@ class FilmItem extends StatelessWidget {
   final String title;
   FilmItem({this.urlSegment,this.title});
 
-  MovieApi movieApi = MovieApi();
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-      future: movieApi.fetchMovies(urlSegment),
+      future: Provider.of<MoviesListViewModel>(context).fetchAllMovies(urlSegment),
       builder: (context,snapshot){
         if(snapshot.connectionState == ConnectionState.waiting){
           return Loading();

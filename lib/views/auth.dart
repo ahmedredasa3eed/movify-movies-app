@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:movify/style/styles.dart';
-import 'package:movify/views/home_screen.dart';
+import 'package:movify/views/home_view.dart';
 import 'package:movify/widgets/alert_dialog.dart';
 import 'package:movify/widgets/form_input.dart';
 import 'package:movify/widgets/loading.dart';

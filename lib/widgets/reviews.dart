@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:movify/models/review.dart';
 import 'package:movify/services/reviews_api.dart';
 import 'package:movify/style/styles.dart';
+import 'package:movify/view_models/review_view_model.dart';
+import 'package:provider/provider.dart';
 
 class UsersReviews extends StatelessWidget {
 
@@ -29,7 +31,7 @@ class UsersReviews extends StatelessWidget {
             ),
           ),
           FutureBuilder(
-            future: reviewsApi.fetchReviews(id),
+            future: Provider.of<ReviewsViewModel>(context).fetchAllReviews(id),
             builder: (context,snapshot){
               if(snapshot.connectionState == ConnectionState.waiting){
                 return Container(

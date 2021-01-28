@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movify/services/categories_api.dart';
+import 'package:movify/view_models/categories_list_view_model.dart';
+import 'package:provider/provider.dart';
 
 class Categories extends StatelessWidget {
   CategoriesApi categoriesApi = CategoriesApi();
@@ -7,7 +9,7 @@ class Categories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-        future: categoriesApi.fetchCategories(),
+        future: Provider.of<CategoriesListViewModel>(context).fetchAllCategories(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return Container(
