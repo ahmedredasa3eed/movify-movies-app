@@ -39,6 +39,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
+          accentColor: Color(0xff302b63),
         ),
         home: SplashScreen(),
         routes: {

@@ -24,7 +24,7 @@ class Loading extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 CircularProgressIndicator(
-                  backgroundColor: Colors.lightGreen,
+                  backgroundColor: Color(0xff302b63),
                 ),
               ],
             ),
